@@ -5,9 +5,9 @@ using UnityEngine;
 public class SlimeMirrorScript : MonoBehaviour
 {
     public Vector2 speed = new Vector2(50, 50);
+	public Animator animator;
 	private Vector2 movement;
 	private Rigidbody2D rigidbodyComponent;
-	private 
 	
 	// Start is called before the first frame update
     void Start()
@@ -22,6 +22,8 @@ public class SlimeMirrorScript : MonoBehaviour
 		float inputY = Input.GetAxis("Vertical");
 		
 		movement = new Vector2( speed.x * inputX, speed.y * inputY);
+		animator.SetFloat("LRMove", inputX);
+		animator.SetFloat("UDMove", inputY);
     }
 	
 	void FixedUpdate()

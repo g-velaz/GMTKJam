@@ -285,6 +285,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1701926798 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1205158407474414243, guid: a12f90d4218d17c4b88ac2b4d94fc281, type: 3}
+  m_PrefabInstance: {fileID: 1205158407932728621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1829310784 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7174571511188529746, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
+  m_PrefabInstance: {fileID: 7174571509662266130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &2104313140
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -401,6 +411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MirrorSlime
       objectReference: {fileID: 0}
+    - target: {fileID: 1205158407362698543, guid: a12f90d4218d17c4b88ac2b4d94fc281, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1701926798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a12f90d4218d17c4b88ac2b4d94fc281, type: 3}
 --- !u!1001 &5918628013436107062
@@ -471,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7174571510651554310, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1829310784}
     - target: {fileID: 7174571510651554314, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
       propertyPath: m_RootOrder
       value: 1
