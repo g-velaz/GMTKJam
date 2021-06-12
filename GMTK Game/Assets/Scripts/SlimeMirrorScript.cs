@@ -24,6 +24,16 @@ public class SlimeMirrorScript : MonoBehaviour
 		movement = new Vector2( speed.x * inputX, speed.y * inputY);
 		animator.SetFloat("LRMove", inputX);
 		animator.SetFloat("UDMove", inputY);
+		
+		if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+		{
+			animator.SetBool("LeftRight", true);
+		}
+		else if(Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow))
+		{
+			animator.SetBool("LeftRight", false);
+		}
+		
     }
 	
 	void FixedUpdate()
