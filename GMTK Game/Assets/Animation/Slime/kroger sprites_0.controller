@@ -112,11 +112,31 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: kroger sprites_0
   serializedVersion: 5
+<<<<<<< Updated upstream
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: New Layer
     m_StateMachine: {fileID: 6747986252810872338}
+=======
+  m_AnimatorParameters:
+  - m_Name: UDMove
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: LRMove
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  m_AnimatorLayers:
+  - serializedVersion: 5
+    m_Name: Base Layer
+    m_StateMachine: {fileID: 4870841058848812300}
+>>>>>>> Stashed changes
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -126,6 +146,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<< Updated upstream
 --- !u!1102 &2733672402120809969
 AnimatorState:
   serializedVersion: 6
@@ -179,12 +200,16 @@ AnimatorState:
   m_CycleOffsetParameter: 
   m_TimeParameter: 
 --- !u!1107 &6747986252810872338
+=======
+--- !u!1107 &4870841058848812300
+>>>>>>> Stashed changes
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: New Layer
   m_ChildStates:
   - serializedVersion: 1
@@ -211,6 +236,10 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 4497849644953270486}
     m_Position: {x: -191.27213, y: 214.11108, z: 0}
+=======
+  m_Name: Base Layer
+  m_ChildStates: []
+>>>>>>> Stashed changes
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -220,6 +249,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+<<<<<<< Updated upstream
   m_DefaultState: {fileID: 7141489551157794917}
 --- !u!1102 &7141489551157794917
 AnimatorState:
@@ -273,3 +303,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+=======
+  m_DefaultState: {fileID: 0}
+>>>>>>> Stashed changes
