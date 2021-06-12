@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: redgreen tilesheet_23
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -6047741435456119308, guid: dd8ea0a0d0ed83e4c8dfcba15a94c416, type: 3}
+  m_Sprite: {fileID: -6047741435456119308, guid: 4addbf328e044d94193a4d9641979c22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
