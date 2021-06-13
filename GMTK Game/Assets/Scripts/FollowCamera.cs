@@ -9,6 +9,10 @@ public class FollowCamera : MonoBehaviour {
 	public int test;
 	public GameObject target1;
 	public GameObject target2;
+	public float bottomBorder;
+	public float topBorder;
+	public float leftBorder;
+	public float rightBorder;
 	public Vector3 offset;
 	Vector3 targetPos;
 	private Vector3 centerOfTargets;
@@ -22,19 +26,13 @@ public class FollowCamera : MonoBehaviour {
 	void FixedUpdate () {
 		if (target1)
 		{
-			Vector3 posNoZ = transform.position;
 			
 			centerOfTargets = ((target1.transform.position + target2.transform.position) / 2);
-			
-			posNoZ.z = centerOfTargets.z;
-			
-			Vector3 targetDirection = (centerOfTargets - posNoZ);
 
-			interpVelocity = targetDirection.magnitude * 3f;
-
-			targetPos = transform.position + (targetDirection.normalized * interpVelocity * Time.deltaTime); 
-
-			transform.position = Vector3.Lerp( transform.position, targetPos + offset, 0.20f);
+			transform.position = new Vector3(
+					Mathf.Clamp(centerOfTargets.x, leftBorder, rightBorder),
+					Mathf.Clamp(centerOfTargets.y, topBorder, bottomBorder),
+					transform.position.z);
 		}
 	}
 }
