@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1205158407362698537, guid: a12f90d4218d17c4b88ac2b4d94fc281, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1205158407362698539, guid: a12f90d4218d17c4b88ac2b4d94fc281, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -850,6 +854,10 @@ PrefabInstance:
     - target: {fileID: 7174571510651554308, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
       propertyPath: m_Offset.y
       value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174571510651554308, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7174571510651554309, guid: bd07ff638d2e492489071811e2bbaba6, type: 3}
       propertyPath: m_SortingLayer
